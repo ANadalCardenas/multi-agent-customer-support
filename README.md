@@ -1,6 +1,6 @@
-# Uda-Hub: Multi-Agent Customer Support System
+# Multi-Agent Customer Support
 
-Uda-Hub is a multi-agent customer support system built with LangGraph. It handles support tickets for CultPass, a cultural experiences subscription app. A supervisor agent reads each ticket and routes it to one of four specialized agents. Each agent can resolve the ticket or escalate it to a human.
+A multi-agent customer support system built with LangGraph. It handles support tickets for CultPass, a cultural experiences subscription app. A supervisor agent reads each ticket and routes it to one of four specialized agents. Each agent can resolve the ticket or escalate it to a human.
 
 ## Project Structure
 

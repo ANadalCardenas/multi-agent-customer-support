@@ -1,6 +1,6 @@
 # Agentic Architecture
 
-Uda-Hub uses a supervisor pattern. A Supervisor node reads each ticket and decides what happens next. It can route the ticket to one of 4 specialized agents, mark it as finished, or escalate it to a human.
+This system uses a supervisor pattern. A Supervisor node reads each ticket and decides what happens next. It can route the ticket to one of 4 specialized agents, mark it as finished, or escalate it to a human.
 
 The whole graph is built by hand with LangGraph's `StateGraph`, not with a prebuilt orchestration helper. Each specialized agent is a ReAct agent (`create_react_agent`). This is allowed since the "no prebuilt workflow" rule applies to the orchestration graph, not to individual agents.
 
