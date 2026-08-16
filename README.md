@@ -172,7 +172,3 @@ This starts a Jupyter Lab *server* inside the container, exposed at [http://loca
 - [scikit-learn](https://scikit-learn.org/): TF-IDF search for the knowledge base.
 - [pytest](https://pytest.org/): automated tests.
 - [Docker](https://www.docker.com/): containerized tests and app.
-
-## License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
