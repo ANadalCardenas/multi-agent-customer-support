@@ -66,21 +66,23 @@ The tests cover the 9 tools (database access, knowledge search, escalation, memo
 
 ## Running with Docker
 
-The project ships with a `Dockerfile` and `docker-compose.yml` so the test suite runs without installing anything locally beyond Docker.
+The project ships with a `Dockerfile` and `docker-compose.yml` covering two independent use cases. Neither one runs the notebooks automatically — pick the one you need.
 
-Run the tests:
+**Run the automated tests** (no `.env` needed, this is also what CI runs):
 
 ```
 docker compose run --rm tests
 ```
 
-Explore the notebooks (requires a `.env` file, see `.env.example`):
+This builds the image, runs `pytest` inside the container, and prints the results to your terminal. Nothing stays running afterwards.
+
+**Explore the notebooks interactively** (requires a `.env` file, see `.env.example`):
 
 ```
 docker compose up app
 ```
 
-This starts Jupyter Lab on [http://localhost:8888](http://localhost:8888).
+This starts a Jupyter Lab *server* inside the container, exposed at [http://localhost:8888](http://localhost:8888). Open that URL, then open and run `03_agentic_app.ipynb` yourself, cell by cell, exactly as you would locally — the container just saves you from installing Python/dependencies on your machine. It does not execute any notebook or open any output on its own.
 
 ## Architecture
 
