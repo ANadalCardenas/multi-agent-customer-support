@@ -1,0 +1,13 @@
+services:
+  tests:
+    build: .
+    command: pytest
+
+  # Runs the notebooks (needs a .env file with your OpenAI credentials, see .env.example)
+  app:
+    build: .
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser
+    ports:
+      - "8888:8888"
+    env_file:
+      - .env
