@@ -1,0 +1,27 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Runtime logs (regenerated automatically by agentic/logging_utils.py)
+agentic/logs/*.jsonl
+!agentic/logs/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
